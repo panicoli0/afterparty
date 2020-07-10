@@ -1,0 +1,2 @@
+# afterparty
+an events app
