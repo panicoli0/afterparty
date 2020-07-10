@@ -1,4 +1,4 @@
-package com.example.educational
+package com.example.afterparty
 
 import android.os.Bundle
 
