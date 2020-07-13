@@ -1,41 +1,49 @@
 {
   "project_info": {
-    "project_number": "128711169963",
-    "firebase_url": "https://educationalapp-c60e1.firebaseio.com",
-    "project_id": "educationalapp-c60e1",
-    "storage_bucket": "educationalapp-c60e1.appspot.com"
+    "project_number": "1075978583142",
+    "firebase_url": "https://afterparty-f46ef.firebaseio.com",
+    "project_id": "afterparty-f46ef",
+    "storage_bucket": "afterparty-f46ef.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:128711169963:android:95d11168ca0e8a5aafe4ee",
+        "mobilesdk_app_id": "1:1075978583142:android:cc69a52cb89055f85e41a7",
         "android_client_info": {
-          "package_name": "com.panicoli.educational"
+          "package_name": "com.panicoli.afterparty"
         }
       },
       "oauth_client": [
         {
-          "client_id": "128711169963-teu0dmg4i3r7dnsulpu6tbljlj60mjgg.apps.googleusercontent.com",
+          "client_id": "1075978583142-eknabjdn4hin8c11h13rfldvnengvuer.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.panicoli.afterparty",
+            "certificate_hash": "54250af916ed1ac1d218fe839ae92c3f3c484d7d"
+          }
+        },
+        {
+          "client_id": "1075978583142-htv5el1tbod8ouijd9svcsd53qo8lsrg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC9wkab3VitUcBLSUUwOsmlg9f4Q1oL70M"
+          "current_key": "AIzaSyCyuWxysK_Xj8no6UHaT3exIU2YN6_9B7A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "128711169963-teu0dmg4i3r7dnsulpu6tbljlj60mjgg.apps.googleusercontent.com",
+              "client_id": "1075978583142-htv5el1tbod8ouijd9svcsd53qo8lsrg.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "128711169963-hlrav8lggvirea7lhi81dvevj91u3hqe.apps.googleusercontent.com",
+              "client_id": "1075978583142-8tmqap8ub54h8assf3oonbqu63cee1en.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.panicoli.educational"
+                "bundle_id": "com.panicoli.afterparty"
               }
             }
           ]

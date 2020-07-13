@@ -1,7 +1,6 @@
 import 'package:afterparty/User/model/user.dart';
 import 'package:afterparty/User/ui/widgets/button_bar.dart';
 import 'package:afterparty/User/ui/widgets/gradient_back.dart';
-import 'package:afterparty/User/ui/widgets/profile_background.dart';
 import 'package:afterparty/User/ui/widgets/user_info.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -73,8 +72,8 @@ class ProfileHeader extends StatelessWidget {
                 Row(
                   children: <Widget>[title],
                 ),
-                ButtonsBar(),
                 UserInfo(user),
+                ButtonsBar(),
               ],
             ),
           ),

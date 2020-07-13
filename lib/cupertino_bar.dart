@@ -1,7 +1,10 @@
+import 'package:afterparty/Partys/model/party.dart';
 import 'package:afterparty/Partys/ui/screens/search_page.dart';
 import 'package:afterparty/User/ui/screens/home.dart';
 import 'package:afterparty/User/ui/screens/profile_header.dart';
 import 'package:afterparty/User/ui/screens/profile_tab.dart';
+import 'package:afterparty/User/ui/widgets/profile_party.dart';
+import 'package:afterparty/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -40,7 +43,7 @@ class CupertinoBar extends StatelessWidget {
                   return BlocProvider<UserBloc>(
                     // ignore: missing_return
                     bloc: UserBloc(),
-                    child: ProfileHeader(),
+                    child: ProfileTab(),
                   );
                 },
               );

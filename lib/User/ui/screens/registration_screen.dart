@@ -1,3 +1,5 @@
+import 'package:afterparty/User/bloc/bloc_user.dart';
+import 'package:afterparty/User/model/user.dart';
 import 'package:afterparty/components/rounded_button.dart';
 import 'package:afterparty/User/ui/screens/home.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +16,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   String email;
   String password;
   final _auth = FirebaseAuth.instance;
+
+  UserBloc userBloc;
 
   @override
   Widget build(BuildContext context) {
@@ -84,16 +88,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               height: 24.0,
             ),
             RoundedButton(
-              onPressed: () async {
-                try {
-                  final newUser = await _auth.createUserWithEmailAndPassword(
-                      email: email, password: password);
-                  if (newUser != null) {
-                    Navigator.pushNamed(context, HomeScreen.id);
-                  }
-                } catch (e) {
-                  print(e);
-                }
+              onPressed: () {
+                userBloc.signOut();
+                userBloc.signIn().then((FirebaseUser user) {
+                  userBloc.updateUserData(
+                    User(
+                      uid: user.uid,
+                      name: user.displayName,
+                      email: user.email,
+                    ),
+                  );
+                });
               },
               title: 'Register',
               color: Colors.blueAccent,

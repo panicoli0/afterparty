@@ -1,3 +1,4 @@
+import 'package:afterparty/User/model/user.dart';
 import 'package:afterparty/components/rounded_button.dart';
 import 'package:afterparty/cupertino_bar.dart';
 import 'package:flutter/material.dart';
@@ -52,9 +53,20 @@ class _SignInScreen extends State<SignInScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              height: 200.0,
-              child: Image.asset('images/logo.png'),
+            Row(
+              children: <Widget>[
+                Container(
+                  height: 60.0,
+                  child: Image.asset('images/logoAfterParty.png'),
+                ),
+                Text(
+                  'After Party',
+                  style: TextStyle(
+                    fontSize: 45.0,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 48.0,
@@ -134,8 +146,16 @@ class _SignInScreen extends State<SignInScreen> {
             RoundedButton(
               onPressed: () {
                 userBloc.signOut();
-                userBloc.signIn().then((FirebaseUser user) =>
-                    print("El usuario es ${user.displayName}"));
+                userBloc.signIn().then((FirebaseUser user) {
+                  userBloc.updateUserData(
+                    User(
+                      uid: user.uid,
+                      name: user.displayName,
+                      email: user.email,
+                      photoURL: user.photoUrl,
+                    ),
+                  );
+                });
               },
               title: 'Login with Google',
               color: Colors.blueAccent,
