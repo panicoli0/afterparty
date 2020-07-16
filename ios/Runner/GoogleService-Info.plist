@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1075978583142-8tmqap8ub54h8assf3oonbqu63cee1en.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1075978583142-8tmqap8ub54h8assf3oonbqu63cee1en</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1075978583142-eknabjdn4hin8c11h13rfldvnengvuer.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAr5veEA6vr4Alz7wVIzlxeU16H6WeuLKQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1075978583142</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.panicoli.afterparty</string>
+	<key>PROJECT_ID</key>
+	<string>afterparty-f46ef</string>
+	<key>STORAGE_BUCKET</key>
+	<string>afterparty-f46ef.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1075978583142:ios:0463a7e786397e4a5e41a7</string>
+	<key>DATABASE_URL</key>
+	<string>https://afterparty-f46ef.firebaseio.com</string>
+</dict>
+</plist>
